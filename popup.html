@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>LLM Screen Evaluator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/logo.png" sizes="32x32" />
+</head>
+
+<body>
+  <header class="header">
+    <h3>LLM Screen Evaluator</h3>
+  </header>
+
+  <section class="card">
+    <label class="label">Gemini API Key</label>
+    <div class="row">
+      <input id="apikey" type="password" placeholder="AIza..." />
+      <button id="saveKey" class="btn secondary">
+        Save
+      </button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="status">
+      <span class="dot idle"></span>
+      <span id="statusText">Waiting for selection…</span>
+    </div>
+
+    <div id="result" class="result empty">
+      Select text on the page to analyze
+    </div>
+
+    <button id="scan" class="btn primary">
+      Evaluate Accuracy
+    </button>
+    <button id="reset" class="btn secondary">
+      Reset
+    </button>
+  </section>
+
+  <script src="libs/marked.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
