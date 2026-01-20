@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>EliteTrace AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-logo" style="background: none;">
+      <img src="../../icons/icon.png" width="22" height="22" alt="Logo">
+    </div>
+    <div class="header-title">EliteTrace AI</div>
+    <div id="siteBadge" class="site-badge" style="display: none;">
+      <span class="pulse-indicator"></span>
+      <span id="siteStatusText">Analyzing Site...</span>
+    </div>
+  </div>
+
+  <!-- API Key Section -->
+  <section class="card">
+    <span class="label">Configuration</span>
+    <div class="input-group">
+      <input id="apikey" type="password" placeholder="Gemini API Key (AIza...)" />
+      <button id="saveKey" class="btn secondary">Save</button>
+    </div>
+  </section>
+
+  <!-- Main Action & Results -->
+  <section class="card">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="analysis">Analysis</button>
+      <button class="tab-btn" data-tab="history">History</button>
+    </div>
+
+    <!-- Score Visualization (Hidden initially or in empty state) -->
+    <div id="scoreDisplay" class="score-container" style="display: none;">
+      <div class="gauge-wrapper">
+        <svg class="gauge-svg" viewBox="0 0 100 100">
+          <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+          <circle id="gaugeFill" class="gauge-fill" cx="50" cy="50" r="40"></circle>
+        </svg>
+        <div class="gauge-text">
+          <div id="scoreValue" class="gauge-value">--</div>
+          <div id="scoreLabelText" class="gauge-label">Score</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="result" class="result empty">
+      Select text on the page to analyze
+    </div>
+
+    <!-- History View (Hidden by default) -->
+    <div id="historyView" class="history-container" style="display: none;">
+      <div class="history-header">
+        <span>Recent Traces</span>
+        <button id="clearHistory" class="btn-text">Clear All</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <!-- History items will be injected here -->
+      </div>
+    </div>
+
+    <div class="input-group" style="margin-top: 1.25rem;">
+      <button id="scan" class="btn primary" style="flex: 1;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        Text
+      </button>
+      <button id="visionScan" class="btn primary"
+        style="flex: 1.2; background: linear-gradient(135deg, #8b5cf6, #d946ef);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+        Vision
+      </button>
+      <button id="reset" class="btn secondary" style="flex: 0.8;">Reset</button>
+    </div>
+  </section>
+
+  <script src="../../libs/marked.min.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>
