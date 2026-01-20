@@ -8,7 +8,7 @@ EliteTrace.AI là một tiện ích mở rộng (Chrome Extension) được thi�
 - Độ khách quan: Sử dụng dữ liệu đối chiếu từ các nguồn tin báo chí chính thống, các tổ chức kiểm chứng sự thật (fact-checkers) và cơ sở dữ liệu học thuật toàn cầu.
 - Đa dạng hình thức: Không chỉ giới hạn ở văn bản, công cụ còn tập trung giải quyết vấn đề nhức nhối về ảnh giả mạo và nội dung do AI can thiệp (Deepfake).
 - Rất tốt đối với việc kiểm chứng hộp thư email hoặc các tin nhắn nghi ngờ có nội dung sai sự thật hoặc lừa đảo.
-- Đánh giá độ tin cậy của trang web khi truy cập.
+- Đánh giá độ tin cậy của trang web khi truy cập đảm bảo các tài nguyên được người dùng tải về là an toàn.
 
 ## Chức năng chính
 
