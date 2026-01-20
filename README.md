@@ -36,7 +36,7 @@ EliteTrace.AI là một tiện ích mở rộng (Chrome Extension) được thi�
    - Truy cập chrome://extensions/ trên trình duyệt Chrome.
    - Kích hoạt "Chế độ dành cho nhà phát triển" (Developer mode).
    - Chọn "Tải tiện ích đã giải nén" (Load unpacked) và chọn thư mục build/dist của dự án.
-   - Pin extension vào browser
+   - Gim tiện ích (extension) vào browser
    - Reload lại page trước đó hoặc tắt và bật lại trình duyệt.
 
 ## Lộ trình phát triển
