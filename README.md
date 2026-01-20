@@ -30,19 +30,14 @@ EliteTrace.AI là một tiện ích mở rộng (Chrome Extension) được thi�
 Để cài đặt dự án trong môi trường thử nghiệm, thực hiện theo các bước sau:
 
 1. Clone repository:
-   git clone https://github.com/hainguyen011/EliteTrace.AI.git
+   git clone https://github.com/hainguyen011/EliteTrace.AI.git hoặc download file ZIP và giải nén
 
-2. Cài đặt các thư viện cần thiết:
-   cd EliteTrace.AI
-   npm install
-
-3. Biên dịch dự án:
-   npm run build
-
-4. Nạp tiện ích vào trình duyệt:
+2. Nạp tiện ích vào trình duyệt:
    - Truy cập chrome://extensions/ trên trình duyệt Chrome.
    - Kích hoạt "Chế độ dành cho nhà phát triển" (Developer mode).
    - Chọn "Tải tiện ích đã giải nén" (Load unpacked) và chọn thư mục build/dist của dự án.
+   - Pin extension vào browser
+   - Reload lại page trước đó hoặc tắt và bật lại trình duyệt.
 
 ## Lộ trình phát triển
 
