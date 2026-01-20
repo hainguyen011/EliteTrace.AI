@@ -1,8 +1,9 @@
 export const CONFIG = {
     GOOGLE_SEARCH_API_KEY: 'AIzaSyCOZKPCNQ_RLyfprcpXOyymel6MOFbJ6ew',
     GOOGLE_SEARCH_ENGINE: 'f12f095da7fcb4690',
-    GEMINI_MODEL: 'gemini-2.0-flash',
+    GEMINI_MODEL: 'gemini-2.5-flash',
     API_BASE_URL: 'https://generativelanguage.googleapis.com/v1beta/models',
+    CONTEXT_MENU_ID: 'elitetrace-verify-selection',
 };
 
 export const MESSAGE_TYPES = {
